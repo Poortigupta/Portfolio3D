@@ -1,0 +1,73 @@
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  githubUrl: string;
+  liveUrl: string;
+  featured: boolean;
+}
+
+export const projectsData: Project[] = [
+  {
+    id: '1',
+    title: 'Subscriptify - Website Subscription Checker Bot',
+    description: 'An AI-powered chatbot that determines whether a website is free, freemium, or requires a paid subscription. Uses natural language processing to analyze website content and provide subscription status.',
+    image: '/project-1.jpg',
+    technologies: ['Python', 'spaCy', 'BeautifulSoup', 'Requests', 'Streamlit'],
+    githubUrl: 'https://github.com/poortigupta/subscriptify',
+    liveUrl: 'https://subscriptify-demo.com',
+    featured: true
+  },
+  {
+    id: '2',
+    title: 'Jeevni – Healthcare Services',
+    description: 'A comprehensive healthcare service solution developed for SITE Hackathon. Features video calling, payment gateway integration, and complete healthcare management system.',
+    image: '/project-2.jpg',
+    technologies: ['React', 'Express.js', 'WebRTC', 'Razorpay', 'Tailwind CSS', 'HTML', 'CSS'],
+    githubUrl: 'https://github.com/poortigupta/jeevni',
+    liveUrl: 'https://jeevni-healthcare.vercel.app',
+    featured: true
+  },
+  {
+    id: '3',
+    title: 'Weather Dashboard',
+    description: 'A responsive weather dashboard that displays current weather and forecasts using OpenWeather API. Built with vanilla JavaScript and modern CSS.',
+    image: '/project-3.jpg',
+    technologies: ['JavaScript', 'HTML5', 'CSS3', 'OpenWeather API'],
+    githubUrl: 'https://github.com/johndoe/weather-dashboard',
+    liveUrl: 'https://weather-dashboard-demo.com',
+    featured: false
+  },
+  {
+    id: '4',
+    title: 'Social Media API',
+    description: 'RESTful API for a social media platform with user authentication, posts, comments, and likes. Built with Node.js, Express, and PostgreSQL.',
+    image: '/project-4.jpg',
+    technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'Bcrypt'],
+    githubUrl: 'https://github.com/johndoe/social-api',
+    liveUrl: 'https://social-api-docs.com',
+    featured: false
+  },
+  {
+    id: '5',
+    title: 'Machine Learning Predictor',
+    description: 'A machine learning web app that predicts house prices using Python, Flask, and scikit-learn. Interactive visualizations with Chart.js.',
+    image: '/project-5.jpg',
+    technologies: ['Python', 'Flask', 'scikit-learn', 'Pandas', 'Chart.js'],
+    githubUrl: 'https://github.com/johndoe/ml-predictor',
+    liveUrl: 'https://ml-predictor-demo.com',
+    featured: true
+  },
+  {
+    id: '6',
+    title: 'Portfolio Website',
+    description: 'This very portfolio! Built with React, Three.js, and Framer Motion. Features 3D graphics, particle effects, and smooth animations.',
+    image: '/project-6.jpg',
+    technologies: ['React', 'Three.js', 'Framer Motion', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/johndoe/portfolio',
+    liveUrl: 'https://johndoe-portfolio.com',
+    featured: false
+  }
+];
