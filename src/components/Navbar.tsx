@@ -60,7 +60,7 @@ const Navbar = () => {
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-bold gradient-text cursor-pointer"
           >
-            John Doe
+            Poorti Gupta
           </motion.button>
 
           <div className="hidden md:flex items-center space-x-8">
