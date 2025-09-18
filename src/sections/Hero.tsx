@@ -12,14 +12,6 @@ const Hero = () => {
     }
   };
 
-  const downloadResume = () => {
-    // In a real app, this would download the actual resume
-    const link = document.createElement('a');
-    link.href = '/resume.pdf'; // This should be a real PDF file
-    link.download = 'Poorti_Gupta_Resume.pdf';
-    link.click();
-  };
-
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-10">
       <div className="container mx-auto px-6">
@@ -49,10 +41,10 @@ const Hero = () => {
             >
               <TypingAnimation
                 texts={[
-                  "A Creative Software Developer",
-                  "Web Developer",
-                  "AI Enthusiast", 
-                  "Open Source Contributor"
+                  'A Creative Software Developer',
+                  'Web Developer',
+                  'AI Enthusiast',
+                  'Open Source Contributor',
                 ]}
                 speed={80}
                 className="text-foreground"
@@ -82,15 +74,17 @@ const Hero = () => {
                 View My Work
                 <FiArrowDown className="ml-2 group-hover:translate-y-1 transition-transform" />
               </Button>
-              
+
               <Button
-                onClick={downloadResume}
+                asChild
                 variant="outline"
                 size="lg"
                 className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300"
               >
-                <FiDownload className="mr-2" />
-                Download Resume
+                <a href="/Poorti_gupta_resume.pdf" download="Poorti_Gupta_Resume.pdf">
+                  <FiDownload className="mr-2" />
+                  Download Resume
+                </a>
               </Button>
             </motion.div>
           </motion.div>
