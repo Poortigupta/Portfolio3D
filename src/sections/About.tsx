@@ -43,18 +43,17 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-semibold text-foreground">
-              Building the Future, One Line of Code at a Time
+              “The best algorithm I follow, keep hustling..”
             </h3>
             
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Computer Science student passionate about creating innovative digital experiences. 
-                I transform ideas into reality through clean, maintainable code.
+               CS student (Top 10) | 10+ AI & full-stack projects | Skilled in DSA, MERN, AI/ML, Agile + Jira | Writing clean, maintainable, scalable code.
               </p>
               
               <p>
-                Specializing in modern web technologies, AI systems, and full-stack development. 
-                Always eager to tackle new challenges and contribute to open-source projects.
+                Focused on building AI-driven applications, full-stack solutions, and scalable systems that create real-world impact
+, with projects recognized among the top 5 at a college level  workshop.
               </p>
             </div>
 

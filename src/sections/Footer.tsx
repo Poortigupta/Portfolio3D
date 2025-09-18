@@ -6,17 +6,17 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: FiGithub,
-      url: 'https://github.com/poortigupta',
+      url: 'https://github.com/Poortigupta',
     },
     {
       name: 'LinkedIn',
       icon: FiLinkedin,
-      url: 'https://linkedin.com/in/poortigupta',
+      url: 'https://www.linkedin.com/in/poorti-gupta-b11529282/',
     },
     {
       name: 'Twitter',
       icon: FiTwitter,
-      url: 'https://twitter.com/poortigupta',
+      url: 'https://twitter.com/PoortiGupta',
     },
     {
       name: 'Email',
@@ -61,7 +61,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="text-center text-muted-foreground">
             <p className="mb-2">Let's build something amazing together!</p>
-            <p className="text-sm">poortigupta2309@email.com</p>
+            {/* <p className="text-sm"></p> */}
           </div>
 
           {/* Copyright */}

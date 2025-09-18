@@ -88,5 +88,18 @@ export const experienceData: TimelineItem[] = [
       'Utilized both frontend and backend technologies',
       'Demonstrated problem-solving and teamwork skills'
     ]
+  },
+  {
+    id: 'exp-4',
+    type: 'experience',
+    title: 'Intern',
+    subtitle: 'AI Engineer Intern',
+    institution: 'AIPlanTech',
+    date: 'June 2025 - Present',
+    description: [
+      'Working on AI-driven projects',
+      'Collaborating with cross-functional teams',
+      'Gaining hands-on experience in machine learning and data analysis'
+    ]
   }
 ];
