@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { skillsData } from '@/data/skillsData';
 
 const Skills = () => {
+  
+
   return (
     <section id="skills" className="py-20 bg-gradient-to-br from-background via-background to-muted/20">
       <div className="container mx-auto px-6">
@@ -71,29 +73,9 @@ const Skills = () => {
                           {skill.name}
                         </h4>
                         
-                        {/* Skill Level Indicator */}
-                        <div className="flex space-x-1">
-                          {[...Array(3)].map((_, i) => (
-                            <div
-                              key={i}
-                              className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                                i < (skill.level === 'Advanced' ? 3 : skill.level === 'Intermediate' ? 2 : 1)
-                                  ? 'bg-accent' 
-                                  : 'bg-muted-foreground/30'
-                              }`}
-                            />
-                          ))}
-                        </div>
                       </div>
                       
-                      {/* Level Badge */}
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileHover={{ opacity: 1, scale: 1 }}
-                        className="absolute -top-2 -right-2 px-2 py-1 bg-accent text-accent-foreground text-xs rounded-full font-medium opacity-0 group-hover:opacity-100 transition-all duration-300"
-                      >
-                        {skill.level}
-                      </motion.div>
+                      
                     </div>
                   </motion.div>
                 ))}
