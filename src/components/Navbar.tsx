@@ -58,9 +58,14 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             onClick={() => scrollToSection('hero')}
-            className="text-2xl font-bold gradient-text cursor-pointer"
+            className="cursor-pointer"
+            aria-label="Go to home"
           >
-            Poorti Gupta
+            <span className="text-3xl md:text-4xl leading-none">
+              <span className="align-middle">&lt; </span>
+              <span className="font-signature">Poorti Gupta</span>
+              <span className="align-middle"> / &gt;</span>
+            </span>
           </motion.button>
 
           <div className="hidden md:flex items-center space-x-8">

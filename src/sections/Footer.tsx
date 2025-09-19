@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi';
+import { FiCode, FiGithub, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi';
 
 const Footer = () => {
   const socialLinks = [
@@ -14,9 +14,9 @@ const Footer = () => {
       url: 'https://www.linkedin.com/in/poorti-gupta-b11529282/',
     },
     {
-      name: 'Twitter',
-      icon: FiTwitter,
-      url: 'https://twitter.com/PoortiGupta',
+      name: 'Leetcode',
+      icon: FiCode,
+      url: 'https://leetcode.com/u/poorti_gupta2309/',
     },
     {
       name: 'Email',
@@ -36,8 +36,10 @@ const Footer = () => {
           className="flex flex-col items-center space-y-6"
         >
           {/* Logo/Name */}
-          <div className="text-2xl font-bold gradient-text">
-            Poorti Gupta
+          <div className="text-2xl">
+            <span className="align-middle">&lt; </span>
+            <span className="font-signature">Poorti Gupta</span>
+            <span className="align-middle"> / &gt;</span>
           </div>
 
           {/* Social Links */}
