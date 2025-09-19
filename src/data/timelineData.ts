@@ -32,18 +32,18 @@ export const educationData: TimelineItem[] = [
     institution: 'Ashish Memorial Public School, Karauli',
     date: '2021 - 2022',
     description: [
-      'Aggregate: 93%'
+      'Percentage: 93%'
     ]
   },
   {
     id: 'edu-3',
     type: 'education',
     title: 'Class X',
-    subtitle: 'CBSE Board',
+    subtitle: 'RBSE Board',
     institution: 'Ashish Memorial Public School, Karauli',
     date: '2019 - 2020',
     description: [
-      'Aggregate: 90.84%'
+      'Percentage: 90.84%'
     ]
   }
 ];
