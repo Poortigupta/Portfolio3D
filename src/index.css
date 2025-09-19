@@ -100,6 +100,13 @@
     scroll-behavior: smooth;
   }
 
+  /* Signature brand font */
+  .font-signature {
+    font-family: 'Caveat', cursive;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+  }
+
   /* Scrollbar styling */
   ::-webkit-scrollbar {
     width: 8px;
@@ -146,6 +153,10 @@
   /* Hover effects */
   .hover-glow {
     @apply transition-all duration-300 hover:shadow-lg hover:shadow-accent/25;
+  }
+
+  .brand-glow {
+    text-shadow: none;
   }
 
   .hover-scale {

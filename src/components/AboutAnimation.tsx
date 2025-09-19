@@ -25,7 +25,7 @@ const FloatingCubes = () => {
   const wireframeColor = theme === 'dark' ? '#00BFFF' : '#0066CC';
 
   return (
-    <group ref={groupRef}>
+    <group ref={groupRef} scale={1.25}>
       {/* Main central cube */}
       <mesh position={[0, 0, 0]}>
         <boxGeometry args={[1, 1, 1]} />
