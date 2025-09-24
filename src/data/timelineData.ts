@@ -52,30 +52,30 @@ export const experienceData: TimelineItem[] = [
   {
     id: 'exp-1',
     type: 'experience',
-    title: 'Volunteer',
-    subtitle: 'Event Management',
-    institution: 'Techkriti, MBM Jodhpur',
-    date: '2024',
-    description: [
-      'Volunteered at Techkriti technical festival',
-      'Assisted in event management and coordination',
-      'Gained experience in teamwork and leadership'
+    title: 'Intern',
+    subtitle: 'AI Engineer Intern',
+    institution: 'AIPlanTech, Jodhpur',
+    date: 'June 2025 - July 2025',
+    description: ['Leading Agile SaaS development team',
+      'Optimizing face recognition systems',
+      'Gaining hands-on experience in machine learning and Automating scalable cloud pipelines'
+      
     ]
   },
   {
     id: 'exp-2',
     type: 'experience',
-    title: 'Volunteer',
-    subtitle: 'Sports Festival',
-    institution: 'Khelo MBM Fest, MBM Jodhpur',
+    title: 'Open Source Contributor',
+    subtitle: 'Contributor',
+    institution: 'GirlScript Summer of Code (GSSoC)',
     date: '2024',
     description: [
-      'Volunteered at sports festival',
-      'Helped in organizing and managing sports events',
-      'Demonstrated commitment to extracurricular activities'
+      'Enhancing UI/UX with modern React.js optimizations',
+      'Contributed in boosting web performance and load efficiency',
+      'Contributing to open-source through PRs and reviews'
     ]
   },
-  {
+    {
     id: 'exp-3',
     type: 'experience',
     title: 'Hackathon Participant',
@@ -92,14 +92,29 @@ export const experienceData: TimelineItem[] = [
   {
     id: 'exp-4',
     type: 'experience',
-    title: 'Intern',
-    subtitle: 'AI Engineer Intern',
-    institution: 'AIPlanTech',
-    date: 'June 2025 - Present',
+    title: 'Coordinator',
+    subtitle: 'Sports Festival',
+    institution: 'Khelo MBM Fest, MBM Jodhpur',
+    date: '2024',
     description: [
-      'Working on AI-driven projects',
-      'Collaborating with cross-functional teams',
-      'Gaining hands-on experience in machine learning and data analysis'
+      'Coordinating KheloMBM’24 sports fest with 300+ participants',
+      'Representing CSE department in inter-department events',
+      'Winning a gold medal in cricket competition'
     ]
-  }
+  },
+    {
+    id: 'exp-5',
+    type: 'experience',
+    title: 'Coordinator',
+    subtitle: 'Technical Events',
+    institution: 'Techkriti’23, MBM University',
+    date: '2023',
+    description: [
+      'Coordinating Techkriti’23 promotions and logistics',
+      'Leading an 8-member team for event execution',
+      'Driving 22% growth in participation and engagement'
+    ]
+  },
+
+  
 ];
