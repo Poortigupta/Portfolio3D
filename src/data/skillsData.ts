@@ -197,6 +197,11 @@ export const skillsData: SkillCategory[] = [
         color: '#6366F1',
       },
       {
+        name: 'ChromaDB',
+        icon: FaDatabase,
+        color: '#6366F1',
+      },
+      {
         name: 'Google Cloud',
         icon: SiGooglecloud,
         color: '#4285F4',
