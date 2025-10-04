@@ -6,6 +6,7 @@ import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('hero');
+  const [hoveredNav, setHoveredNav] = useState<string | null>(null);
   const { theme, toggleTheme } = useTheme();
 
   const navItems = [
@@ -18,15 +19,18 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
+    // Observe sections and mark the one closest to the center as active.
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
+        // Find the entry closest to the viewport center (largest intersectionRatio)
+        const visible = entries.filter(e => e.isIntersecting);
+        if (visible.length > 0) {
+          const best = visible.reduce((a, b) => (a.intersectionRatio > b.intersectionRatio ? a : b));
+          setActiveSection(best.target.id);
+        }
       },
-      { threshold: 0.5 }
+      // Use rootMargin to bias the observation toward the center area and a single threshold
+      { root: null, rootMargin: '-40% 0px -40% 0px', threshold: [0.25, 0.5, 0.75] }
     );
 
     navItems.forEach(({ id }) => {
@@ -40,6 +44,8 @@ const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
+      // Set active immediately to avoid visual delay while scrolling
+      setActiveSection(sectionId);
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
@@ -73,8 +79,10 @@ const Navbar = () => {
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
+                onMouseEnter={() => setHoveredNav(id)}
+                onMouseLeave={() => setHoveredNav(null)}
                 className={`text-sm font-medium transition-smooth hover:text-accent ${
-                  activeSection === id ? 'text-accent' : 'text-foreground/80'
+                  (hoveredNav ?? activeSection) === id ? 'text-accent' : 'text-foreground/80'
                 }`}
               >
                 {label}
