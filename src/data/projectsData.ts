@@ -12,22 +12,22 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     id: '1',
+    title: 'Samadhan – AI-Powered Civic Issue Resolution Platform',
+    description: 'Samadhan is an AI-powered civic issue reporting and resolution platform. Citizens submit complaints with media, departments prioritize and assign tasks, and field staff update progress. Role-based dashboards, smart routing, and an integrated knowledge chatbot accelerate response and transparency',
+    image: '/Samadhan.png',
+    technologies: ['React', 'Express.js', 'PostgreSQL', 'RAG Based Chatbot', 'Tailwind CSS', 'Google Cloud', 'Render','Vercel'],
+    githubUrl: 'https://github.com/Poortigupta/Samadhan_Frontend',
+    liveUrl: ' https://samadhan-wine.vercel.app/',
+    featured: true
+  },
+  {
+    id: '2',
     title: 'Subscriptify - Website Subscription Checker Bot',
     description: 'An AI-powered chatbot that determines whether a website is free, freemium, or requires a paid subscription. Uses natural language processing to analyze website content and provide subscription status.',
     image: '/project-1.jpg',
     technologies: ['Python', 'spaCy', 'BeautifulSoup', 'Requests', 'Streamlit'],
     githubUrl: 'https://github.com/poortigupta/subscriptify',
     liveUrl: 'https://subscriptify-demo.com',
-    featured: true
-  },
-  {
-    id: '2',
-    title: 'Jeevni – Healthcare Services',
-    description: 'A comprehensive healthcare service solution developed for SITE Hackathon. Features video calling, payment gateway integration, and complete healthcare management system.',
-    image: '/project-2.jpg',
-    technologies: ['React', 'Express.js', 'WebRTC', 'Razorpay', 'Tailwind CSS', 'HTML', 'CSS'],
-    githubUrl: 'https://github.com/poortigupta/jeevni',
-    liveUrl: 'https://jeevni-healthcare.vercel.app',
     featured: true
   },
   {
