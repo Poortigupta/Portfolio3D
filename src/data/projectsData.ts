@@ -24,21 +24,21 @@ export const projectsData: Project[] = [
     id: '2',
     title: 'Subscriptify - Website Subscription Checker Bot',
     description: 'An AI-powered chatbot that determines whether a website is free, freemium, or requires a paid subscription. Uses natural language processing to analyze website content and provide subscription status.',
-    image: '/project-1.jpg',
+    image: '/Subscriptify.png',
     technologies: ['Python', 'spaCy', 'BeautifulSoup', 'Requests', 'Streamlit'],
-    githubUrl: 'https://github.com/poortigupta/subscriptify',
+    githubUrl: 'https://github.com/Poortigupta/Subscriptify-Web-Subscription-Checker',
     liveUrl: 'https://subscriptify-demo.com',
-    featured: true
+    featured: false
   },
   {
     id: '3',
-    title: 'Weather Dashboard',
-    description: 'A responsive weather dashboard that displays current weather and forecasts using OpenWeather API. Built with vanilla JavaScript and modern CSS.',
-    image: '/project-3.jpg',
-    technologies: ['JavaScript', 'HTML5', 'CSS3', 'OpenWeather API'],
-    githubUrl: 'https://github.com/johndoe/weather-dashboard',
-    liveUrl: 'https://weather-dashboard-demo.com',
-    featured: false
+    title: 'RAG PDF QA Chatbot',
+    description: 'Upload PDFs and chat with their contents—RAG pipeline + modern React UI.',
+    image: '/Ragchatbot.png',
+    technologies: ['FastAPI', 'LangChain', 'ChromaDB', 'React', 'TypeScript', 'Tailwind CSS','Gemini LLM', 'Render', 'Vercel'],
+    githubUrl: 'https://github.com/Poortigupta/RAG-CHATBOT-UI',
+    liveUrl: 'https://rag-chatbot-ui-navy.vercel.app/',
+    featured: true
   },
   {
     id: '4',
@@ -56,7 +56,7 @@ export const projectsData: Project[] = [
     description: 'A machine learning web app that predicts house prices using Python, Flask, and scikit-learn. Interactive visualizations with Chart.js.',
     image: '/project-5.jpg',
     technologies: ['Python', 'Flask', 'scikit-learn', 'Pandas', 'Chart.js'],
-    githubUrl: 'https://github.com/johndoe/ml-predictor',
+    githubUrl: 'https://github.com/poortigupta/ml-predictor',
     liveUrl: 'https://ml-predictor-demo.com',
     featured: true
   },
@@ -64,10 +64,10 @@ export const projectsData: Project[] = [
     id: '6',
     title: 'Portfolio Website',
     description: 'This very portfolio! Built with React, Three.js, and Framer Motion. Features 3D graphics, particle effects, and smooth animations.',
-    image: '/project-6.jpg',
+    image: '/portfolio.png',
     technologies: ['React', 'Three.js', 'Framer Motion', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/johndoe/portfolio',
-    liveUrl: 'https://johndoe-portfolio.com',
+    githubUrl: 'https://github.com/Poortigupta/Portfolio3D',
+    liveUrl: 'https://portfoliopoorti-gupta-9842dsjyg.vercel.app/',
     featured: false
   }
 ];
