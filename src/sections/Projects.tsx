@@ -22,8 +22,8 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        {/* Masonry-style Layout */}
-        <div className="columns-1 md:columns-2 xl:columns-3 gap-8 space-y-8">
+        {/* Symmetric Responsive Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {projectsData.map((project, index) => (
             <motion.div
               key={project.id}
@@ -36,7 +36,7 @@ const Projects = () => {
                 stiffness: 100 
               }}
               viewport={{ once: true }}
-              className="break-inside-avoid mb-8 group perspective-1000"
+              className="group perspective-1000 h-full"
             >
               <motion.div 
                 whileHover={{ 
@@ -45,14 +45,14 @@ const Projects = () => {
                   rotateX: 5,
                   transition: { duration: 0.3 }
                 }}
-                className="bg-gradient-to-br from-card to-background border border-border rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl group-hover:shadow-accent/10 transition-all duration-500 transform-gpu"
+                className="bg-gradient-to-br from-card to-background border border-border rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl group-hover:shadow-accent/10 transition-all duration-500 transform-gpu flex flex-col h-full"
               >
                 {/* Project Image */}
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden h-48 md:h-56 w-full">
                   <motion.img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 md:h-64 object-cover"
+                    className="w-full h-full object-cover"
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.6 }}
                   />
@@ -94,7 +94,7 @@ const Projects = () => {
                 </div>
 
                 {/* Project Content */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-1">
                   <motion.h3 
                     className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors"
                     whileHover={{ x: 5 }}
@@ -128,7 +128,7 @@ const Projects = () => {
 
                   {/* Interactive Footer */}
                   <motion.div 
-                    className="flex gap-3"
+                    className="flex gap-3 mt-auto"
                     whileHover={{ y: -2 }}
                   >
                     <Button
