@@ -40,34 +40,34 @@ export const projectsData: Project[] = [
     liveUrl: 'https://rag-chatbot-ui-navy.vercel.app/',
     featured: true
   },
-  {
-    id: '4',
-    title: 'Social Media API',
-    description: 'RESTful API for a social media platform with user authentication, posts, comments, and likes. Built with Node.js, Express, and PostgreSQL.',
-    image: '/project-4.jpg',
-    technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'Bcrypt'],
-    githubUrl: 'https://github.com/johndoe/social-api',
-    liveUrl: 'https://social-api-docs.com',
-    featured: false
-  },
-  {
-    id: '5',
-    title: 'Machine Learning Predictor',
-    description: 'A machine learning web app that predicts house prices using Python, Flask, and scikit-learn. Interactive visualizations with Chart.js.',
-    image: '/project-5.jpg',
-    technologies: ['Python', 'Flask', 'scikit-learn', 'Pandas', 'Chart.js'],
-    githubUrl: 'https://github.com/poortigupta/ml-predictor',
-    liveUrl: 'https://ml-predictor-demo.com',
-    featured: true
-  },
-  {
-    id: '6',
-    title: 'Portfolio Website',
-    description: 'This very portfolio! Built with React, Three.js, and Framer Motion. Features 3D graphics, particle effects, and smooth animations.',
-    image: '/portfolio.png',
-    technologies: ['React', 'Three.js', 'Framer Motion', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/Poortigupta/Portfolio3D',
-    liveUrl: 'https://portfoliopoorti-gupta-9842dsjyg.vercel.app/',
-    featured: false
-  }
+  // {
+  //   id: '4',
+  //   title: 'Social Media API',
+  //   description: 'RESTful API for a social media platform with user authentication, posts, comments, and likes. Built with Node.js, Express, and PostgreSQL.',
+  //   image: '/project-4.jpg',
+  //   technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'Bcrypt'],
+  //   githubUrl: 'https://github.com/johndoe/social-api',
+  //   liveUrl: 'https://social-api-docs.com',
+  //   featured: false
+  // },
+  // {
+  //   id: '5',
+  //   title: 'Machine Learning Predictor',
+  //   description: 'A machine learning web app that predicts house prices using Python, Flask, and scikit-learn. Interactive visualizations with Chart.js.',
+  //   image: '/project-5.jpg',
+  //   technologies: ['Python', 'Flask', 'scikit-learn', 'Pandas', 'Chart.js'],
+  //   githubUrl: 'https://github.com/poortigupta/ml-predictor',
+  //   liveUrl: 'https://ml-predictor-demo.com',
+  //   featured: true
+  // },
+  // {
+  //   id: '6',
+  //   title: 'Portfolio Website',
+  //   description: 'This very portfolio! Built with React, Three.js, and Framer Motion. Features 3D graphics, particle effects, and smooth animations.',
+  //   image: '/portfolio.png',
+  //   technologies: ['React', 'Three.js', 'Framer Motion', 'Tailwind CSS'],
+  //   githubUrl: 'https://github.com/Poortigupta/Portfolio3D',
+  //   liveUrl: 'https://portfoliopoorti-gupta-9842dsjyg.vercel.app/',
+  //   featured: false
+  // }
 ];
